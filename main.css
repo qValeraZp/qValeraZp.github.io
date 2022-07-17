@@ -1,0 +1,88 @@
+:root {
+    --white: rgb(245, 245, 245);
+    --black: rgb(40, 40, 40);
+    --blue: rgb(93, 162, 247);
+    --btnFontColor: rgb(245, 245, 245);
+    --btnBg: rgb(51, 84, 204);
+}
+
+body {
+
+    font-family: Bahnschrift;
+    color: var(--fontColor);
+    background: var(--bg);
+
+} 
+
+li {
+    list-style: circle;
+  }
+
+.logo {
+    top: 5px;
+    position: fixed;
+    display: block;
+    right: 10px;
+    
+}
+
+#images {
+    white-space: nowrap;
+    display: flex;
+    
+}
+
+.image {
+    margin: 15px;
+    border: 2px solid rgb(93, 162, 247);
+    align-items: center;
+}
+
+.image1 {
+    margin: 15px;
+    border: 2px solid rgb(93, 162, 247);
+    margin-left: 15%;
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnBg: var(--blue);
+    --btnFontColor: var(--white);
+    --btnImage: 'off.png';
+    
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+    --btnImage: 'on.png';
+}
+
+.title {
+    font-size: 64px;
+    text-align: center;
+    text-shadow: 0px 5px 0 rgb(93, 162, 247);
+    
+}
+
+
+.subtitle {
+    font-size: 40px;
+    text-align: center;
+    color: var(--blue)
+}
